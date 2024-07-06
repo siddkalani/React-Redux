@@ -9,8 +9,8 @@ const Home = () => {
     <div>
       <main>
         <div className="items-container">
-          {items.map(items => (
-            <DisplayItems item={items} />
+          {items.map((items , index) => (
+            <DisplayItems key={index} item={items} />
           ))}
         </div>
       </main>

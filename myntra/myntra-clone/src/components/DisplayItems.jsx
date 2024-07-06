@@ -1,6 +1,9 @@
 import React from 'react'
 import "../index.css"
 const DisplayItems = ({item}) => {
+  const handleAdd=()=>{
+    
+  }
   return (
     <div>
         <div className="item-container">
@@ -15,7 +18,7 @@ const DisplayItems = ({item}) => {
           <span className="original-price">Rs {item.original_price}</span>
           <span className="discount">{item.discount_percentage} OFF</span>
       </div>
-      <button className="btn-add-bag" onClick={()=>console.log("add to bag")}>Add to Bag</button>
+      <button className="btn-add-bag" onClick={handleAdd}>Add to Bag</button>
     </div>
     </div>
   )

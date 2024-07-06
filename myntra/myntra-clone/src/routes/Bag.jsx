@@ -7,12 +7,13 @@ import { useSelector } from 'react-redux'
 const Bag = () => {
 
   const items = useSelector((store)=>store.items)
-  console.log(items)
+  const item0 = items[0]
+  console.log(item0)
   return (
     <div>
     <main>
       <div className="bag-page">
-        <div className="bag-items-container"><BagItems item={items[0]}/></div>
+        <div className="bag-items-container"><BagItems item={items}/></div>
         <div className="bag-summary"><BagSummary/></div>
       </div>
     </main>
